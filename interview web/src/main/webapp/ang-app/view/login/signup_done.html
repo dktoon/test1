@@ -1,0 +1,57 @@
+
+<div ng-cloak>
+    <div layout="column">
+	    <md-card >
+	    	<md-toolbar class="md-primary" class="md-padding" layout="row" layout-align="center center">
+		        <md-card-header>
+					<md-card-header-text layout="column" layout-align="center center">
+						<img src="/images/logo-login.png" class="md-card-image" alt="Lenderprice" />
+		            	<h2 class="md-display-2">
+		            		Lender Price <span style="color: white; font-size: 9px">{{buildVersion()}}</span>
+		            	</h2>
+					</md-card-header-text>
+					
+				</md-card-header>
+		    	
+	    	</md-toolbar>
+			
+	        <md-card-content >
+				 <md-card-title>
+				 	 <md-card-title-text>
+				 	 
+           				 <span class="md-headline" ng-hide="isAccountOnHold" style="font-size: 20px">Almost done, we just need you to verify your email.</span>
+         				 <span class="md-headline" ng-hide="!isAccountOnHold">Sorry, You are on the waiting List :)</span>
+         			 </md-card-title-text>
+				 </md-card-title>
+				<md-content layout-padding="">
+		      		<p ng-hide="isAccountOnHold">
+						Please, check your email inbox to confirm your subscription.<br/>
+						<br/>
+						Thank you
+					</p>
+					<p ng-hide="!isAccountOnHold">
+						An email has been sent to you confirming your subscription<br/>
+						You will be notified when your account becomes active<br/>
+						<br/>
+						Thank you
+					</p>
+		  		</md-content>	        	
+	       		
+	       		
+	        </md-card-content>
+	        
+	        
+	        
+	        <md-card-actions layout="row" layout-xs="column" layout-align="space-between stretch" layout-align-xs="center center">
+	        	<div>
+					<md-button class="md-hue-2" ng-href="#/login/contact">Contact Us</md-button>
+	        	
+	        	</div>
+	        	<div>
+					<md-button class="md-hue-2" ng-href="#/login/log">Login/Signup</md-button>
+				</div>
+       		</md-card-actions>
+	      </md-card>
+    </div>
+		
+</div>

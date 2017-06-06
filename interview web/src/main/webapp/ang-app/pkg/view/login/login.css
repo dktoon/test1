@@ -1,0 +1,225 @@
+@media screen and (min-width: 800px) {
+  /* line 6, ../../../view/login/login.scss */
+  #loginBox {
+    background: url("/images/wallpapers/main.jpg") no-repeat center;
+    background-size: cover;
+    height: 100%;
+    position: relative;
+  }
+}
+/* line 15, ../../../view/login/login.scss */
+#loginBox .pkg_login_index {
+  overflow-y: auto;
+  overflow-x: visible;
+  max-width: 590px;
+  height: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  vertical-align: middle;
+  /* md-card {
+  	
+  	background-color: transparant; */
+  /* 	
+  } */
+}
+/* line 16, ../../../view/login/login.scss */
+#loginBox .pkg_login_index .flag-dropdown {
+  display: none;
+}
+@media screen and (max-width: 800px) {
+  /* line 15, ../../../view/login/login.scss */
+  #loginBox .pkg_login_index {
+    max-width: 100%;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+/* line 35, ../../../view/login/login.scss */
+#loginBox .pkg_login_index .bottom-link {
+  color: grey;
+}
+/* line 39, ../../../view/login/login.scss */
+#loginBox .pkg_login_index fieldset {
+  width: 80%;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 3px;
+  border-color: #f0f0f0;
+  text-align: center;
+  height: 120px;
+}
+/* line 48, ../../../view/login/login.scss */
+#loginBox .pkg_login_index fieldset legend {
+  color: grey;
+}
+/* line 52, ../../../view/login/login.scss */
+#loginBox .pkg_login_index fieldset div {
+  margin: auto;
+  width: auto;
+  padding-top: 16px;
+}
+/* line 58, ../../../view/login/login.scss */
+#loginBox .pkg_login_index > div {
+  position: relative;
+  height: 100%;
+}
+/* line 63, ../../../view/login/login.scss */
+#loginBox .pkg_login_index .error {
+  color: red;
+}
+/* line 70, ../../../view/login/login.scss */
+#loginBox .pkg_login_index md-card {
+  margin: 0px;
+  width: 100%;
+  border-radius: 5px;
+}
+@media screen and (min-width: 800px) {
+  /* line 70, ../../../view/login/login.scss */
+  #loginBox .pkg_login_index md-card {
+    position: absolute;
+    top: 30%;
+    transform: translateY(-30%);
+    min-width: 100%;
+    background-color: white;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 3px 6px rgba(0, 0, 0, 0.5);
+    transition: all 0.2s ease-in-out;
+  }
+}
+@media screen and (max-width: 800px) {
+  /* line 70, ../../../view/login/login.scss */
+  #loginBox .pkg_login_index md-card {
+    border-radius: 0px;
+  }
+}
+/* line 89, ../../../view/login/login.scss */
+#loginBox .pkg_login_index md-card md-toolbar {
+  border-radius: 5px 5px 0px 0px;
+}
+/* line 94, ../../../view/login/login.scss */
+#loginBox .pkg_login_index md-card img {
+  max-height: 112px;
+  max-width: 165px;
+}
+@media screen and (min-width: 800px) {
+  /* line 94, ../../../view/login/login.scss */
+  #loginBox .pkg_login_index md-card img {
+    max-height: 150px;
+    max-width: 221px;
+  }
+}
+/* line 103, ../../../view/login/login.scss */
+#loginBox .pkg_login_index md-card input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px white inset;
+}
+/* line 106, ../../../view/login/login.scss */
+#loginBox .pkg_login_index md-card md-card-header {
+  font-family: opensans;
+  font-weight: bold;
+}
+/* line 111, ../../../view/login/login.scss */
+#loginBox .pkg_login_index md-card md-card-actions section {
+  margin-bottom: 1em;
+}
+@media screen and (max-width: 800px) {
+  /* line 116, ../../../view/login/login.scss */
+  #loginBox .pkg_login_index md-card > md-card-content {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    padding-top: 8px;
+  }
+  /* line 121, ../../../view/login/login.scss */
+  #loginBox .pkg_login_index md-card > md-card-content > md-content {
+    padding-bottom: 0;
+  }
+}
+@media screen and (min-width: 800px) {
+  /* line 127, ../../../view/login/login.scss */
+  #loginBox .pkg_login_index md-card > md-card-actions {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+/* line 136, ../../../view/login/login.scss */
+#loginBox .pkg_login_index md-card label, #loginBox .pkg_login_index md-card input {
+  font-size: 1.4em;
+}
+/* line 140, ../../../view/login/login.scss */
+#loginBox .pkg_login_index md-card .oauth {
+  transition: all 0.2s ease-in-out;
+  -webkit-filter: opacity(0.5);
+  filter: opacity(0.5);
+}
+/* line 145, ../../../view/login/login.scss */
+#loginBox .pkg_login_index md-card form {
+  padding-bottom: 0;
+}
+/* line 147, ../../../view/login/login.scss */
+#loginBox .pkg_login_index md-card form md-input-container {
+  margin-bottom: 0px;
+}
+/* line 151, ../../../view/login/login.scss */
+#loginBox .pkg_login_index md-card .oauth:hover {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.19), 0 3px 6px rgba(0, 0, 0, 0.5);
+  -webkit-filter: opacity(1);
+  filter: opacity(1);
+}
+/* line 157, ../../../view/login/login.scss */
+#loginBox .pkg_login_index md-card .login {
+  background-color: #2185D0;
+  -webkit-filter: opacity(0.8);
+  filter: opacity(0.5);
+  transition: all 0.2s ease-in-out;
+  font-size: 16px;
+}
+/* line 164, ../../../view/login/login.scss */
+#loginBox .pkg_login_index md-card .register {
+  background-color: #21BA45;
+  -webkit-filter: opacity(0.8);
+  filter: opacity(0.5);
+  transition: all 0.2s ease-in-out;
+  font-size: 16px;
+}
+/* line 171, ../../../view/login/login.scss */
+#loginBox .pkg_login_index md-card .login:hover {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.19), 0 3px 6px rgba(0, 0, 0, 0.5);
+  background-color: #2185D0;
+  -webkit-filter: opacity(1);
+  filter: opacity(1);
+}
+/* line 177, ../../../view/login/login.scss */
+#loginBox .pkg_login_index md-card .register:hover {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.19), 0 3px 6px rgba(0, 0, 0, 0.5);
+  background-color: #21BA45;
+  -webkit-filter: opacity(1);
+  filter: opacity(1);
+}
+/* line 186, ../../../view/login/login.scss */
+#loginBox .pkg_login_index md-card .linkedinColor {
+  background-color: #00719B;
+}
+/* line 189, ../../../view/login/login.scss */
+#loginBox .pkg_login_index md-card .googleColor {
+  background-color: #DC4A38;
+}
+/* line 192, ../../../view/login/login.scss */
+#loginBox .pkg_login_index md-card .twitterColor {
+  background-color: #00719B;
+}
+/* line 195, ../../../view/login/login.scss */
+#loginBox .pkg_login_index md-card .facebookColor {
+  background-color: #3B5998;
+}
+@media screen and (min-width: 800px) {
+  /* line 199, ../../../view/login/login.scss */
+  #loginBox .pkg_login_index md-card:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 9px rgba(0, 0, 0, 0.8);
+  }
+}
+
+/* line 213, ../../../view/login/login.scss */
+.pkg_login_signup .flag-dropdown {
+  display: none;
+}

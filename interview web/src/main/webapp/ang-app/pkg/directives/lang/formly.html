@@ -1,0 +1,8 @@
+<md-input-container  ng-repeat="field in fields track by $index" >
+	<label>
+		{{::field.label}}
+	</label>
+	<inputly type="field.type" ng-model="model" field="field" mode-type="view" ></inputly> 
+	
+</md-input-container>
+

@@ -1,0 +1,120 @@
+1 - Define all test cases for the login Page/Signup
+
+2 - Setup Selenium in eclipse
+	+ Use selenium to login to the application with interview/interview (using code, not the selenium UI)
+	+ Use selenium to test at least 2 cases from (1)
+
+3 - define all possible case in those methods
+	List<AbstractUser> findUserByUsernameOrEmail(String username,String email);
+	AbstractUser findUserByUsername(String username);
+	AbstractUser createUser(AbstractUser user) throws IOException;
+	AbstractUser resetPassword(ObjectId userId, boolean sendNotification) throws IOException;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-  Test Cases for the design login page/signup module are as follows:
+1. The login page should load correctly when correct url is entered for all the supported broswers as well as for the versions supported.
+a. The login page should load correctly when correct url is entered for firefox browser( check for all the versions supported)
+b. The login page should load correctly when correct url is entered for Chrome browser( check for all the versions supported)
+c. The login page should load correctly when correct url is entered for Safari browser( check for all the versions supported)
+d. The login page should load correctly when correct url is entered for Opera browser( check for all the versions supported)
+
+2. Check for all the Username field validations:-
+a. Check the allowed field length
+b. Check whether all the allowed characters are accepted
+c. Check that the user is prompted to correct the input when they use are special character which is not allowed in the username field.
+d. Check that the user is prompted to correct the input when they create a username with more than the allowed field length.
+
+3. Check for all the Password field validations:- Password field validations:- Field Length, Special Character limitations, valid - invalid values, minimum numbers of character requirements
+a. Check the allowed field length
+b. Check whether all the allowed characters are accepted
+c. Check that the user is prompted to correct the input when they use are special character which is not allowed in the password field.
+d. Check that the user is prompted to correct the input when they create a password which is not line line with the set standards and limitations.
+e. Password values should not be seen and should be encrypted on user input
+f. Check that the password should be of the minimum specified length. User should be prompted if the password is not as per the required specifications.
+
+4. User should be shown required validations/instructions for both the user name and the password fields for them to enter the values correctly as per the specification
+
+5. The login button should be clickable
+
+6. Clicking on the login button after inputting the correct user name and password should redirect the user to the correct landing page
+
+7. User should be shown an user friendly error message if the user name is incorrect
+
+8. User should be shown an user friendly error message if the password is incorrect
+
+9. forgot user name/password link should be present on the page
+
+10. clicking on forgot user name/password link should redirect the user to the correct landing page.
+
+11. Clicking on the sign up button should take the user to the signup page 
+
+12. All the field validations on the sign up page.
+
+13. User should be able to sign up if the user has inputted all the correct values on the sign up page
+
+14. If user has already signed up then correct message should be prompted to the user with a link to the login page when the user tries to sign up again.
+
+15. After signing up the user should be able to login correctly
+
+16. User trying to login on a different browser after signing up on a different browser. Should work fine.
+
+17. User should be able to login from a different system after signing up from a different system
+
+18. SQL Injections: check that user should not be able to login using sql injections
+
+19. User should not be able to login with incorrect username or password.
+
+20. User tries to login on different tabs of a same browser - user should be allowed to do the same.
+
+21. When the user open a new tab with the same url after signing in the application then user should be logged in on the othertab as well (depending on the requirement specified).
+
+22. Check whether user is able to login on different browsers on the same system
+
+23. Check whether the user is able to login from different systems using the same browser at the same time
+
+24. Check whether the user is able to login from different systems using different browsers at the same time
+
+25. Check whether user is already logged in if they try to login in a new tab after logging once in private browsing mode
+
+23. check what happens when user hits the same url in private browsing mode after logging in the normal mode of the same browser
+
+24. check whether the cookies are being generated 
+
+25. check whether the page loads if there are any special extentions installed on the system ( eg Ad Blocker - and if the policy says that page should not load if adblock is activated)
+
+26. Check that the page should load in the specified time on different browsers (eg page should load within 1 second irrespective of the browser being used).
+
+27. Check the maximum number of concurrent logins that can be done on the page
+
+28. check what happens when the total number of users trying to login is more than specified. Check for the system behaviour here
+
+29. Check for the performance of the page when there are multiple logins happening concurrently on same/different types of browsers.
+
+
+
+30. Check for the usability and the UI of the page
+
+31. if the application or the web page is supported on mobile devices then check for its functionalities on different mobile phones as per the requirement.
+
+
+32. check what happens when user clicks on back button after logging in (will he be logged in or no)
+
+
+
+ 
+
+
+

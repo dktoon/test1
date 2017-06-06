@@ -1,0 +1,44 @@
+<md-table-container>
+	<table md-table class="md-table">
+	
+		<thead md-head md-order="query.order">
+			<tr md-row>
+				<th md-column ng-repeat="f in section.fields">{{f.label}}</th>
+				<th></th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr ng-repeat="data in config.models | filter:filter | orderBy: query.order  | limitTo: query.limit : (query.page -1) * query.limit">
+				<td ng-repeat="f in section.fields">
+					<div ng-if="f.type == 'boolean'">
+						{{data[f.name]? 'Yes': 'No'}}
+					</div>
+					<div ng-if="f.type == 'string'">
+						{{data[f.name]}}
+					</div>
+					<div ng-if="f.type.type == 'custom'" dynamic="f.type.html">
+					</div>
+					
+				</td>
+				<td>
+					<md-button ng-show="config.view == 'edit'" 
+						ng-click="ctrl.delete(data)" ><i class="material-icons red">delete_forever</i></md-button>	
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</md-table-container>
+<md-table-pagination 
+	md-limit="query.limit" 
+	md-page="query.page" 
+	md-total="{{config.models.length}}" 
+	md-page-select></md-table-pagination>
+	
+<div style="position:fixed;right: 30px;bottom: 30px;z-index:101;">
+	 <md-button ng-href="{{config.urlAddNew}}" class="md-fab md-accent" ng-if="config.view == 'edit'" >
+		<md-icon aria-label="New" class="material-icons">add</md-icon>
+	</md-button> 
+	<md-button ng-click="config.view = (config.view == 'read'? 'edit': 'read')" class="md-fab " ng-class="config.view == 'edit' ? 'md-warn md-hue-2' : 'md-primary'">
+		<md-icon aria-label="New" class="material-icons">{{config.view == 'edit' ? 'clear' : 'create'}}</md-icon>
+	</md-button> 
+</div>

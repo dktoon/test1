@@ -1,0 +1,62 @@
+<div ng-cloak>
+    <div layout="column">
+	    <md-card >
+	    	<md-toolbar class="md-primary" class="md-padding" layout="row" layout-align="center center">
+		        <md-card-header>
+					<md-card-header-text layout="column" layout-align="center center">
+						<img src="/images/logo-login.png" class="md-card-image" alt="Lenderprice" />
+		            	<h2 class="md-display-2">
+		            		Lender Price <span style="color: white; font-size: 9px">{{buildVersion()}}</span>
+		            	</h2>
+					</md-card-header-text>
+					
+				</md-card-header>
+		    	
+	    	</md-toolbar>
+			
+	        <md-card-content >
+				<div style="text-align: -webkit-center;">
+					<div style="margin:auto;display:inline-block;">
+						<img ng-src="{{model.user.nmlsId? getCaptcha(): ''}}" class="captcha busy" ></img>
+								<a style="display: inline-block; height: 50px; position: relative; top: -20px;" ng-click="refreshCaptcha()">
+								<i class="bordered icon big refresh"></i>
+								</a>
+					</div>
+				</div>
+				<div layout-padding="">
+		      		<form name="userForm" autocomplete="off">
+		        		<div layout-gt-sm="row">
+		          			<md-input-container class="md-block" flex>
+		            			<label>Captcha</label>
+		            			<input ng-model="model.captcha" required ng-focus autocomplete="off"  />
+							</md-input-container>
+		          			
+		        		</div>
+		      		</form>
+		  		</div>
+	        	<div ng-if="error && error != ''">
+		        	<div class="ui error form segment" ng-if="error && error != ''">
+			  			<div class="ui error message">
+			    			<div class="header" ng-bind="error"></div>
+			  			</div>
+			  		</div>
+	        	</div>
+	        	<md-card-actions>
+	        		<section layout="row" layout-align="center center" >
+						<md-button class="md-raised md-primary md-warn" ng-click="backToInfo()">Back</md-button>
+						<md-button class="md-raised md-primary register" ng-disabled="!model.captcha" ng-click="navigateToConfirm()">Next</md-button>
+	        		
+	        		</section>
+	       		</md-card-actions>
+	       		
+	       		
+	        </md-card-content>
+	        
+	      
+	      </md-card>
+    </div>
+		
+
+
+	
+</div>

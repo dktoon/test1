@@ -1,0 +1,36 @@
+
+<div >
+   	<h3>Profile Information</h3>
+
+
+	<div>
+		<div layout="column">
+			<div class="ui fluid image"
+ 				style="border: 4px dashed transparent; border-radius: 4px; padding: 2px; float: left;"	ng-hide="true">
++				<img id="imageContainer0" src="/images/avatar/steve.jpg" style="max-height: 150px;width:auto; border-radius: 4px; margin-left: auto; margin-right: auto;" />
+ 			</div>
+			<div id="imageDrop" class="ui fluid image"	style="{{mode!='read'? 'border: 4px dashed cyan; border-radius: 4px; padding: 2px; float: left;': ''}}">
+				<a class="ui left blue corner  label" ng-click="uploadDialog()" ng-hide="mode=='read'">
+					<i class="photo icon link"></i>
+				</a> 
+				<!-- <a class="ui right blue  corner  label" ng-click="uploadDialog()">
+					<i class="upload icon link"></i>
+				</a> -->
+				<img id="imageContainer" src="/images/avatar/steve.jpg" style="max-height: 150px; max-width: 150px;width:auto; border-radius: 4px; margin-left: auto; margin-right: auto; " />
+			</div>
+		</div>
+		<div layout="column">
+			<i class="cloud upload large icon teal link  transition hidden"	ng-click="uploadFile(fileToUpload)"></i>
+			<div id="imageMsgList" class="ui list"></div>
+		</div>
+
+	</div>
+
+	<input id="fileUploadId" type="file" style="visibility: hidden;" accept="image/*;capture=camera"  capture="camera" />
+
+	<div id="upLoadProgress" class="ui teal indicating progress" data-percent="74"	style="width: 100%; height: 32px; visibility: hidden;">
+		<div class="bar"></div>
+	</div>
+
+
+</div>

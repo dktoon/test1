@@ -1,0 +1,51 @@
+<div class="app_admin">
+	<md-toolbar class="md-hue-2 menu" ng-if="notLogin && !companyModeVar">
+		<div class="md-toolbar-tools" layout-padding>
+			<md-button style="padding-bottom: 0" ng-click="toggleRight()" ><i style="cursor: pointer;" class="material-icons md-36 white">menu</i></md-button>
+			<h1 class="logo-font toolbar-title">
+			
+				 Interview
+			</h1>
+			<div flex>
+			</div>
+			
+		</div>
+	
+	</md-toolbar>
+	<div>
+		<md-sidenav style="position: fixed" class="md-sidenav-left md-whiteframe-4dp md-primary" md-component-id="menuAdmin" layout="column" layout-align="start stretch">
+			<md-content layout-padding layout="column" layout-align="start stretch">
+				<div class="sidenav-profile">
+					<img src="/images/avatar/steve.jpg" style="height: 90px"/>
+				</div>
+				<div>
+					<md-button >{{sessionService.currentUser.username}}</md-button>
+				</div>
+				
+			</md-content>
+			<md-divider></md-divider>
+        	<ul layout="column" layout-align="start stretch">
+        		<li flex ng-repeat="item in menuAdmin.items">
+        			<md-button ng-href="{{item.link}}">
+	        			<i class="{{item.icon}}"></i>
+						<span>{{item.label}}</span>
+        			</md-button>
+        		</li>
+        	</ul>
+        	<md-divider flex></md-divider>
+        	<md-divider></md-divider>
+        	<ul layout="column" layout-align="start stretch">
+        		<li flex>
+        			<md-button ng-href="/logout">
+	        			<i class="fa fa-sign-out"></i>
+						<span>Logout</span>
+        			</md-button>
+        		</li>
+        	</ul>
+        </md-sidenav>
+		<div ui-view style="height: 100%; padding-top: {{companyModeVar? '0': '64'}}px;">
+		
+		</div>
+	
+	</div>
+</div>

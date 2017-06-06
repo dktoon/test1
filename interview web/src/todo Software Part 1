@@ -1,0 +1,43 @@
+/*
+You can use anything in the project
+
+First you will need to make the project an eclipse project by using maven
+
+Then you will launch the application, the main is here > com.cre8techlabs.main.Application
+The default user is interview/interview
+On the default page you will have your assignments
+
+
+Files you need to work on:
+Html
+src/main/webapp/ang-app/view/app/admin/dashboard/dashboard.html
+
+Js / angular controller you will use
+/interview/src/main/webapp/ang-app/pkg/controllers/app/admin/dashboard/DashboardController.js
+
+Java
+com.cre8techlabs.main.Application (nothing to do but need to start the application)
+com.cre8techlabs.repository.user.UserRepository
+com.cre8techlabs.web.rest.user.UserController
+
+Mongo
+There are only one user which info is
+"username" : "interview",
+"password" : "interview",
+"email" : "interview@gmail.com"
+
+*/
+
+Maven is already installed
+
+package cre8techlabs.assignment:
+
+
+@SpringBootApplication
+public class Interview {
+	public static void main(String[] args) {
+		// - Go to dashboard.html and complete the assignment.
+		SpringBootApplication.run(Interview.class);
+	}
+}
+

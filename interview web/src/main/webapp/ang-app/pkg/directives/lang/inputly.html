@@ -1,0 +1,43 @@
+<div ng-if="!isType('enum') && !isType('boolean') && !isType('state')" style="margin: 0 0 0 0; padding: 0 0 0 0;">
+	<input ng-if="::isType('string')" type="text" ng-model="data[prop]" placeholder="{{placeholder}}" ng-disabled="modeType == 'read'" aria-label="text"/>
+	<input ng-if="::isType('password')" type="password" ng-model="data[prop]" ng-disabled="modeType == 'read'" aria-label="password"/>
+	<input ng-if="::isType('tel')" type="tel" international-phone-number national-mode='true' only-countries="us" aria-label="tel" ng-disabled="modeType == 'read'" auto-hide-dial-code='true' ng-model="data[prop]" placeholder="1 (555) 555-5555" style="text-align: right;"/>
+	<input ng-if="::isType('email')" type="email" ng-model="data[prop]" ng-disabled="modeType == 'read'" aria-label="email">
+	
+	<input ng-if="::isType('int')"  format="'number'" ng-model="data[prop]" ng-disabled="modeType == 'read'" aria-label="int"/>
+	
+	<input ng-if="::isType('decimal')"  format="'number'" ng-model="data[prop]" ng-disabled="modeType == 'read'" aria-label="decimal"/>
+	
+	<input ng-if="::isType('percent')"  format="'percent'" ng-model="data[prop]"  ng-disabled="modeType == 'read'" aria-label="percent"/>
+	
+	
+	<input ng-if="::isType('currency')"  format="'currency'"  ng-model="data[prop]"  ng-disabled="modeType == 'read'" aria-label="currency"/>
+	
+	<input ng-if="::isType('date')" type="date" ng-model="data[prop]"  ng-disabled="modeType == 'read'" aria-label="date"/>
+	
+	
+	<input ng-if="::isType('datetime')" type="datetime" ng-model="data[prop]"  ng-disabled="modeType == 'read'" aria-label="datetime"/>
+</div>
+
+
+<md-select ng-if="::isType('enum')" ng-model="data[prop]" ng-disabled="modeType == 'read'" ng-init="options()">
+	<md-option ng-value="::o.code" ng-repeat="o in ::optionCache">{{::o.name}}</md-option>
+</md-select>
+
+
+<md-switch style="padding-top: 16px;" ng-if="::isType('boolean') && !type.invert" ng-model="data[prop]" ng-disabled="modeType != 'edit'" ng-init="data[prop+'invertBoolean'] = !data[prop]">
+    {{getLabel(data[prop], 'boolean')}}
+</md-switch>
+<md-switch style="padding-top: 16px;" ng-if="::isType('boolean') && type.invert" ng-model="data[prop+'invertBoolean']" ng-change="onBooleanChg(data,prop)" ng-disabled="modeType != 'edit'"
+	ng-init="data[prop+'invertBoolean'] = !data[prop]">
+	{{getLabel(data[prop], 'boolean')}}
+</md-switch>
+
+<md-select style="margin-top: 0" ng-if="::isType('state')" ng-model="data[prop]" ng-disabled="modeType == 'read'" aria-label="select">
+    <md-option ng-value="::o.code" ng-repeat="o in ::states">{{::o.name}}</md-option>
+</md-select>
+
+<span ng-if="::isType('state') && (states.length == 0 || !states)" style="color:red;">Async data for state not permitted</span>
+<span ng-if="::isType('enum') && (optionCache.length == 0 || !optionCache)" style="color:red;">Async data for Enum not permitted</span>
+
+

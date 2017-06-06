@@ -1,0 +1,250 @@
+@font-face {
+    font-family: aSafePlaceToFall;
+    src: url(/css/fonts/ASafePlacetoFall.ttf);
+}
+*:focus{
+    		outline: none;
+		}
+.logo-font {
+
+	font-family: aSafePlaceToFall
+}
+
+
+.quote-container {
+	margin-top: 50px;
+	position: relative;
+	.note {
+		color: #333;
+		position: relative;
+		width: 300px;
+		margin: 0 auto;
+		padding: 20px;
+		font-family: Satisfy;
+		font-size: 30px;
+		box-shadow: 0 10px 10px 2px rgba(0, 0, 0, 0.3);
+	}
+	
+	.note .author {
+		display: block;
+		margin: 40px 0 0 0;
+		text-align: right;
+	}
+	
+	.yellow {
+		background: #eae672;
+		-webkit-transform: rotate(2deg);
+		-moz-transform: rotate(2deg);
+		-o-transform: rotate(2deg);
+		-ms-transform: rotate(2deg);
+		transform: rotate(2deg);
+	}
+	
+	.pin {
+		background-color: #aaa;
+		display: block;
+		height: 32px;
+		width: 2px;
+		position: absolute;
+		left: 50%;
+		top: -16px;
+		z-index: 1;
+	}
+	
+	.pin:after {
+		background-color: #A31;
+		background-image: radial-gradient(25% 25%, circle, hsla(0, 0%, 100%, .3),
+			hsla(0, 0%, 0%, .3));
+		border-radius: 50%;
+		box-shadow: inset 0 0 0 1px hsla(0, 0%, 0%, .1), inset 3px 3px 3px
+			hsla(0, 0%, 100%, .2), inset -3px -3px 3px hsla(0, 0%, 0%, .2), 23px
+			20px 3px hsla(0, 0%, 0%, .15);
+		content: '';
+		height: 12px;
+		left: -5px;
+		position: absolute;
+		top: -10px;
+		width: 12px;
+	}
+	
+	.pin:before {
+		background-color: hsla(0, 0%, 0%, 0.1);
+		box-shadow: 0 0 .25em hsla(0, 0%, 0%, .1);
+		content: '';
+		height: 24px;
+		width: 2px;
+		left: 0;
+		position: absolute;
+		top: 8px;
+		transform: rotate(57.5deg);
+		-moz-transform: rotate(57.5deg);
+		-webkit-transform: rotate(57.5deg);
+		-o-transform: rotate(57.5deg);
+		-ms-transform: rotate(57.5deg);
+		transform-origin: 50% 100%;
+		-moz-transform-origin: 50% 100%;
+		-webkit-transform-origin: 50% 100%;
+		-ms-transform-origin: 50% 100%;
+		-o-transform-origin: 50% 100%;
+	}
+}
+
+
+
+.menu {
+	z-index: 70;
+	position: fixed;
+	.md-toolbar-tools {
+	
+		position: fixed;
+		h1.toolbar-title {
+			font-size: 30px;
+		}
+		div.item:hover {
+			background-color: #2170c4;
+		}
+		div.item {
+			a {
+				span, i {
+					color: white;
+				}
+				
+			}
+			cursor: pointer;
+			text-align: center;
+			padding-left: 32px;
+			padding-right: 32px;
+			
+			i {
+				font-size: 24px;
+				text-align: center;
+			}
+			span {
+				margin-top: 0;
+				display: block;
+				margin-bottom: 0;
+				font-size: 14px;
+			}
+		}
+		div.profile {
+			button.md-button {
+				padding: 0 0 0 0;
+				margin: 0 0 0 0;
+				
+				img {
+				}
+			
+			}
+		}
+	}
+		
+}
+body {
+	font-family: Roboto,"Helvetica Neue",sans-serif;
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+}
+
+#Application, #main-container {
+	height: 100%;
+	
+}
+#main-container {
+	md-backdrop {
+		position: fixed
+	}
+	a {
+/* 	    color: #1565C0; */
+	    text-decoration: none;
+	}
+	a:hover {
+/* 		color: grey; */
+	}
+	
+	.app_admin {
+		height: 100%;
+		>div {
+			height: 100%;
+		}
+		md-sidenav[md-component-id="menuAdmin"] {
+			z-index: 90;
+			color: grey;
+			a {
+			    color: grey;
+			}
+			.sidenav-profile {
+				text-align: center; 
+				img {
+					border-radius: 50%;
+					margin-left: auto;
+					margin-right: auto;
+					width: 90px;
+				}
+			}
+			>md-content {
+				text-align: center;
+				background-image: url("/images/wallpapers/sidebar-image.jpg");
+			}
+			ul {
+				padding-left: 0;
+				li {
+					
+					a {
+						width: 100%;
+						text-align: left;
+						padding: 0 0 0 0;
+						margin: 0 0 0 0;
+						text-transform: none;
+						i {
+							padding-left: 16px;
+							font-size: 24px;
+							vertical-align: middle;
+							padding-right: 8px;
+						}
+						span {
+							font-size: 16px; vertical-align: middle;
+						}
+					}
+				}
+			}
+		}
+		div {
+			>div[ui-view] {
+				
+			}
+		}
+		
+	}
+	.app_company {
+	
+	}
+	
+	.app_admin_userList {
+	
+	}
+}
+/*** MD **/
+
+/***Material***/
+.material-icons.md-10, .fa.md-10 { font-size: 10px; }
+.material-icons.md-18, .fa.md-18 { font-size: 18px; }
+.material-icons.md-24, .fa.md-24 { font-size: 24px; }
+.material-icons.md-36, .fa.md-36 { font-size: 36px; }
+.material-icons.md-48, .fa.md-48 { font-size: 48px; }
+.material-icons.white, .fa.white {
+	color: white;
+}
+.material-icons.red {
+	color: #EF0802;
+}
+.material-icons.green {
+	color: #0D8F4F;
+}
+.material-icons.blue {
+	color: #1565C0;
+}
+.app_admin_dashboard {
+	height: 100%
+}

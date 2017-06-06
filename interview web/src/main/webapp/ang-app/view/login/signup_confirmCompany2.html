@@ -1,0 +1,52 @@
+
+<div class="ui piled form segment">
+	<div id="top-login" class="ui tertiary top attached segment">
+		<img class="ui centered image" src="/images/logo-login.png" />
+		<h1 class="ui header" >One last step</h1>
+	</div>
+	<div class="ui bottom attached segment">
+		<div class="field">
+			<label>
+				Company name
+			</label>
+			<input type="text" ng-model="model.personSignupResult.company.name" placeholder="Company name" disabled="disabled"></input>
+		</div>
+		<div class="field">
+			<label>
+				NMLS Id
+			</label>
+			<input type="text" ng-model="model.personSignupResult.company.nmlsId" placeholder="NMLS" disabled="disabled"></input>
+		</div>
+		<div class="field">
+			<label>
+				Website
+			</label>
+			<a ng-href="{{model.personSignupResult.company.website}}">{{model.personSignupResult.company.website}}</a>
+		</div>
+		<div class="ui divider"></div>
+		<div class="field">
+			<span>
+				Not your represents company ? <br/>
+				Please continue the registration and update your profile on the nmls
+			</span>
+		</div>
+
+
+	</div>
+
+	<div class="ui right aligned grid">
+	    <div class="right floated right aligned six wide column">
+	        <a class="ui blue labeled icon button" ng-click="confirmAndSignup()">
+				<i class="icon arrow right"></i>Confirm
+			</a>
+	    </div>
+	    <div class="left floated left aligned six wide column">
+	        <a class="ui teal labeled icon button" 
+				href="#/login/signup/info"
+			>
+				<i class="icon arrow left"></i>Back
+			</a>
+	    </div>
+    </div>
+
+</div>

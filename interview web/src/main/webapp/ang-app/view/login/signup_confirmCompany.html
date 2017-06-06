@@ -1,0 +1,69 @@
+<div ng-cloak>
+    <div layout="column">
+	    <md-card >
+	    	<md-toolbar class="md-primary" class="md-padding" layout="row" layout-align="center center">
+		        <md-card-header>
+					<md-card-header-text layout="column" layout-align="center center">
+						<img src="/images/logo-login.png" class="md-card-image" alt="Lenderprice" />
+		            	<h2 class="md-display-2">
+		            		Lender Price <span style="color: white; font-size: 9px">{{buildVersion()}}</span>
+		            	</h2>
+		            	
+		            	<h1 class="ui header" >One last step</h1>
+					</md-card-header-text>
+					
+				</md-card-header>
+		    	
+	    	</md-toolbar>
+			
+	        <md-card-content >
+				
+				<div layout-padding="">
+		      		<form name="userForm" autocomplete="off">
+		        		<div layout-gt-sm="column">
+		          			<md-input-container class="md-block" flex>
+		            			<label>
+									Company name
+								</label>
+								<input type="text" ng-model="model.personSignupResult.company.name"  disabled="disabled"></input>
+							</md-input-container>
+		          			<md-input-container class="md-block" flex>
+		            			<label>
+								NMLS Id
+								</label>
+								<input type="text" ng-model="model.personSignupResult.company.nmlsId" disabled="disabled"></input>
+							</md-input-container>
+		          			<md-input-container class="md-block md-input-has-value" flex>
+		            			<label style="transform: translate3d(0,6px,0) scale(.75);color: rgba(0,0,0,0.54);">
+									Website
+								</label>
+								<a ng-href="{{model.personSignupResult.company.website}}" target="company_website">{{model.personSignupResult.company.website}}</a>
+							</md-input-container>
+		          			<md-divider></md-divider>
+		          			<span>
+				Not your represents company ? <br/>
+				Please continue the registration and update your profile on the nmls
+			</span>
+		        		</div>
+		      		</form>
+		  		</div>
+	        	
+	        	<md-card-actions>
+	        		<section layout="row" layout-align="center center" >
+						<md-button class="md-raised md-primary md-warn" ng-click="backToInfo()">Back</md-button>
+						<md-button class="md-raised md-primary register" ng-click="confirmAndSignup()">Confirm</md-button>
+	        		
+	        		</section>
+	       		</md-card-actions>
+	       		
+	       		
+	        </md-card-content>
+	        
+	      
+	      </md-card>
+    </div>
+		
+
+
+	
+</div>

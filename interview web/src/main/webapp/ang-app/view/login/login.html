@@ -1,0 +1,83 @@
+
+
+<div>
+	    <md-card ng-cloak>
+	    	<md-toolbar class="md-primary" class="md-padding" layout="row" layout-align="center center">
+		        <md-card-header>
+					<md-card-header-text layout="column" layout-align="center center">
+					
+						<img src="/images/logo/logo.png" class="md-card-image" alt="Interview" style="height: 150px; width: 150px"/>
+		            	<h2 class="md-display-2 logo-font" style="margin-top: 0">
+		            		Interview <span style="color: white; font-size: 9px;">{{buildVersion()}}</span>
+		            	</h2>
+					</md-card-header-text>
+					
+				</md-card-header>
+		    	
+	    	</md-toolbar>
+			
+	        <md-card-content >
+
+				<div layout-padding="">
+		      		<form name="userForm" autocomplete="off">
+		        		<div layout-gt-sm="row">
+		          			<md-input-container class="md-block" flex>
+		            			<label>Login</label>
+		            			<input ng-model="user.username" required ng-focus autocomplete="off" ng-keyup="canLogin(user) && $event.keyCode == 13 && !login(user)" />
+							</md-input-container>
+		          			<md-input-container class="md-block" flex>
+					            <label>Password</label>
+					            <input ng-model="user.password" required type="password" autocomplete="off" ng-keyup="canLogin(user) && $event.keyCode == 13 && !login(user)" />
+		          			</md-input-container>
+		        		</div>
+		      		</form>
+		  		</div>
+	        	<div ng-if="error && error != ''">
+		        	<div class="ui error form segment" ng-if="error && error != ''">
+			  			<div class="ui error message">
+			    			<div class="header" ng-bind="error"></div>
+			  			</div>
+			  		</div>
+	        	</div>
+	        	<div class="ui orange message" ng-bind-html="warningMsg" ng-if="warningMsg" flex="100">
+	        		
+	        	</div>
+	        	<md-card-actions>
+	        		<section layout="row" layout-align="center center" >
+	        			<md-button class="md-raised md-primary login" ng-click="login(user)">Login</md-button>
+						<md-button class="md-raised md-primary register" ng-click="register()">Sign Up</md-button>
+						
+	        		</section>
+	       		</md-card-actions>
+	       		
+	       		<div style="margin-left: auto; margin-right: auto; width: 75%; height: 20px; border-bottom: 1px solid grey; text-align: center">
+			    	<span style="font-size: 16px; background-color: white; padding: 0 10px; color: grey" class="logo-font">
+			        	or Login with
+			      	</span>
+			    </div>
+	       		<md-card-actions>
+	       			<section layout="row" layout-align="center center">
+			       					<md-button class="md-fab linkedinColor oauth" aria-label="LinkedIn" ng-click="loginWith('LinkedIn')"><i class="fa fa-linkedin fa-lg"></i></md-button>
+				       				<md-button class="md-fab googleColor oauth" aria-label="Google+" ng-click="loginWith('Google')"><i class="fa fa-google-plus fa-lg"></i></md-button>
+				       				<md-button class="md-fab twitterColor oauth" aria-label="Twitter" ng-click="loginWith('Twitter')"><i class="fa fa-twitter fa-lg"></i></md-button>
+				       				<md-button class="md-fab facebookColor oauth" aria-label="Facebook" ng-click="loginWith('Facebook')"><i class="fa fa-facebook fa-lg"></i></md-button>
+	       			</section>
+
+	
+	       		
+	       		<md-card-actions>
+	        </md-card-content>
+	        
+	        
+	        
+	        <md-card-actions class="bottom-link" layout="row" layout-xs="column" layout-align="space-between stretch" layout-align-xs="center center">
+	        	<div>
+					<md-button class="md-hue-2" ng-href="#/login/contact">Contact Us</md-button>
+	        	
+	        	</div>
+	        	<div>
+					<md-button class="md-hue-2" ng-href="#/login/forgot">Forgot Username or Password</md-button>
+				</div>
+       		</md-card-actions>
+	      </md-card>
+</div>

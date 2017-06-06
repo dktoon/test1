@@ -1,0 +1,93 @@
+<md-content class="app_admin_dashboard" layout-padding>
+
+	<section class="md-whiteframe-1dp">
+		<md-subheader class="md-primary">Resources</md-subheader>
+		<md-content layout-padding>
+			<md-list flex>
+				<md-list-item class="md-1-line">
+					<a class="md-primary" ng-href="http://projects.spring.io/spring-boot/">
+						http://projects.spring.io/spring-boot/
+					</a>
+				</md-list-item>
+
+				<md-list-item class="md-1-line">
+					<a class="md-primary" ng-href="http://projects.spring.io/spring-data-mongodb/">
+						http://projects.spring.io/spring-data-mongodb/
+					</a>
+				</md-list-item>
+
+				<md-list-item class="md-1-line">
+					<a class="md-primary" ng-href="https://angularjs.org/">
+						https://material.angularjs.org/latest
+					</a>
+				</md-list-item>
+				
+				<md-list-item class="md-1-line">
+					<a class="md-primary" ng-href="https://material.angularjs.org/latest">
+						https://material.angularjs.org/latest
+					</a>
+				</md-list-item>
+				
+			</md-list>
+		</md-content>
+		<md-content>
+		
+		</md-content>
+	</section>
+
+	<section class="md-whiteframe-1dp">
+		<md-subheader class="md-primary">List Admin Users with a refresh button and delete button</md-subheader>
+		<md-content layout-padding>
+			<p>
+				A simple display in a table of the username, firstname, and lastname will suffice.
+				<br/>
+				The last column of the table will have a delete button.
+			</p>
+			<table>
+				<tr>
+					<th>UserName</th>
+					<th>FirstName</th>
+					<th>LastName</th>
+					<th>Delete</th>
+				</tr>
+				<tr ng-repeat="admin in admins">
+					<td>{{admin.username}}</td>
+					<td>{{admin.person.firstname}}</td>
+					<td>{{admin.person.lastname}}</td>
+					<td><button ng-click="deleteAdmin(admin)">delete</button></td>
+				</tr>
+			</table>
+		</md-content>
+		<md-content>
+		
+		</md-content>
+	</section>
+
+
+	<section class="md-whiteframe-1dp">
+		<md-subheader class="md-primary">Button to add 1 Random User in the database</md-subheader>
+		<md-content layout-padding>
+			<p>
+				Username and email has to be unique.
+				<br/>
+				Password has to be filled, and the salt has to be empty to allow its generation and the password to be encrypted. 
+			</p>
+			
+		</md-content>
+		<md-content>
+		
+		</md-content>
+	</section>
+	<section class="md-whiteframe-1dp">
+		<md-subheader class="md-primary">Find Users by username with Autocomplete</md-subheader>
+		<md-content layout-padding>
+			<p>
+				You can use https://material.angularjs.org/latest/demo/autocomplete.
+			</p>		
+		</md-content>
+		<md-content>
+		
+		</md-content>
+	</section>
+
+</md-content>

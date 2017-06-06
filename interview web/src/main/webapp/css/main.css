@@ -1,0 +1,273 @@
+@font-face {
+  font-family: aSafePlaceToFall;
+  src: url(/css/fonts/ASafePlacetoFall.ttf);
+}
+/* line 5, main.scss */
+*:focus {
+  outline: none;
+}
+
+/* line 8, main.scss */
+.logo-font {
+  font-family: aSafePlaceToFall;
+}
+
+/* line 14, main.scss */
+.quote-container {
+  margin-top: 50px;
+  position: relative;
+}
+/* line 17, main.scss */
+.quote-container .note {
+  color: #333;
+  position: relative;
+  width: 300px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Satisfy;
+  font-size: 30px;
+  box-shadow: 0 10px 10px 2px rgba(0, 0, 0, 0.3);
+}
+/* line 28, main.scss */
+.quote-container .note .author {
+  display: block;
+  margin: 40px 0 0 0;
+  text-align: right;
+}
+/* line 34, main.scss */
+.quote-container .yellow {
+  background: #eae672;
+  -webkit-transform: rotate(2deg);
+  -moz-transform: rotate(2deg);
+  -o-transform: rotate(2deg);
+  -ms-transform: rotate(2deg);
+  transform: rotate(2deg);
+}
+/* line 43, main.scss */
+.quote-container .pin {
+  background-color: #aaa;
+  display: block;
+  height: 32px;
+  width: 2px;
+  position: absolute;
+  left: 50%;
+  top: -16px;
+  z-index: 1;
+}
+/* line 54, main.scss */
+.quote-container .pin:after {
+  background-color: #A31;
+  background-image: radial-gradient(circle at 25% 25%, rgba(255, 255, 255, 0.3), rgba(0, 0, 0, 0.3));
+  border-radius: 50%;
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.1), inset 3px 3px 3px rgba(255, 255, 255, 0.2), inset -3px -3px 3px rgba(0, 0, 0, 0.2), 23px 20px 3px rgba(0, 0, 0, 0.15);
+  content: '';
+  height: 12px;
+  left: -5px;
+  position: absolute;
+  top: -10px;
+  width: 12px;
+}
+/* line 70, main.scss */
+.quote-container .pin:before {
+  background-color: rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 0.25em rgba(0, 0, 0, 0.1);
+  content: '';
+  height: 24px;
+  width: 2px;
+  left: 0;
+  position: absolute;
+  top: 8px;
+  transform: rotate(57.5deg);
+  -moz-transform: rotate(57.5deg);
+  -webkit-transform: rotate(57.5deg);
+  -o-transform: rotate(57.5deg);
+  -ms-transform: rotate(57.5deg);
+  transform-origin: 50% 100%;
+  -moz-transform-origin: 50% 100%;
+  -webkit-transform-origin: 50% 100%;
+  -ms-transform-origin: 50% 100%;
+  -o-transform-origin: 50% 100%;
+}
+
+/* line 94, main.scss */
+.menu {
+  z-index: 70;
+  position: fixed;
+}
+/* line 97, main.scss */
+.menu .md-toolbar-tools {
+  position: fixed;
+}
+/* line 100, main.scss */
+.menu .md-toolbar-tools h1.toolbar-title {
+  font-size: 30px;
+}
+/* line 103, main.scss */
+.menu .md-toolbar-tools div.item:hover {
+  background-color: #2170c4;
+}
+/* line 106, main.scss */
+.menu .md-toolbar-tools div.item {
+  cursor: pointer;
+  text-align: center;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+/* line 108, main.scss */
+.menu .md-toolbar-tools div.item a span, .menu .md-toolbar-tools div.item a i {
+  color: white;
+}
+/* line 118, main.scss */
+.menu .md-toolbar-tools div.item i {
+  font-size: 24px;
+  text-align: center;
+}
+/* line 122, main.scss */
+.menu .md-toolbar-tools div.item span {
+  margin-top: 0;
+  display: block;
+  margin-bottom: 0;
+  font-size: 14px;
+}
+/* line 130, main.scss */
+.menu .md-toolbar-tools div.profile button.md-button {
+  padding: 0 0 0 0;
+  margin: 0 0 0 0;
+}
+
+/* line 142, main.scss */
+body {
+  font-family: Roboto,"Helvetica Neue",sans-serif;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 150, main.scss */
+#Application, #main-container {
+  height: 100%;
+}
+
+/* line 155, main.scss */
+#main-container md-backdrop {
+  position: fixed;
+}
+/* line 158, main.scss */
+#main-container a {
+  /* 	    color: #1565C0; */
+  text-decoration: none;
+}
+/* line 162, main.scss */
+#main-container a:hover {
+  /* 		color: grey; */
+}
+/* line 166, main.scss */
+#main-container .app_admin {
+  height: 100%;
+}
+/* line 168, main.scss */
+#main-container .app_admin > div {
+  height: 100%;
+}
+/* line 171, main.scss */
+#main-container .app_admin md-sidenav[md-component-id="menuAdmin"] {
+  z-index: 90;
+  color: grey;
+}
+/* line 174, main.scss */
+#main-container .app_admin md-sidenav[md-component-id="menuAdmin"] a {
+  color: grey;
+}
+/* line 177, main.scss */
+#main-container .app_admin md-sidenav[md-component-id="menuAdmin"] .sidenav-profile {
+  text-align: center;
+}
+/* line 179, main.scss */
+#main-container .app_admin md-sidenav[md-component-id="menuAdmin"] .sidenav-profile img {
+  border-radius: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90px;
+}
+/* line 186, main.scss */
+#main-container .app_admin md-sidenav[md-component-id="menuAdmin"] > md-content {
+  text-align: center;
+  background-image: url("/images/wallpapers/sidebar-image.jpg");
+}
+/* line 190, main.scss */
+#main-container .app_admin md-sidenav[md-component-id="menuAdmin"] ul {
+  padding-left: 0;
+}
+/* line 194, main.scss */
+#main-container .app_admin md-sidenav[md-component-id="menuAdmin"] ul li a {
+  width: 100%;
+  text-align: left;
+  padding: 0 0 0 0;
+  margin: 0 0 0 0;
+  text-transform: none;
+}
+/* line 200, main.scss */
+#main-container .app_admin md-sidenav[md-component-id="menuAdmin"] ul li a i {
+  padding-left: 16px;
+  font-size: 24px;
+  vertical-align: middle;
+  padding-right: 8px;
+}
+/* line 206, main.scss */
+#main-container .app_admin md-sidenav[md-component-id="menuAdmin"] ul li a span {
+  font-size: 16px;
+  vertical-align: middle;
+}
+
+/*** MD **/
+/***Material***/
+/* line 231, main.scss */
+.material-icons.md-10, .fa.md-10 {
+  font-size: 10px;
+}
+
+/* line 232, main.scss */
+.material-icons.md-18, .fa.md-18 {
+  font-size: 18px;
+}
+
+/* line 233, main.scss */
+.material-icons.md-24, .fa.md-24 {
+  font-size: 24px;
+}
+
+/* line 234, main.scss */
+.material-icons.md-36, .fa.md-36 {
+  font-size: 36px;
+}
+
+/* line 235, main.scss */
+.material-icons.md-48, .fa.md-48 {
+  font-size: 48px;
+}
+
+/* line 236, main.scss */
+.material-icons.white, .fa.white {
+  color: white;
+}
+
+/* line 239, main.scss */
+.material-icons.red {
+  color: #EF0802;
+}
+
+/* line 242, main.scss */
+.material-icons.green {
+  color: #0D8F4F;
+}
+
+/* line 245, main.scss */
+.material-icons.blue {
+  color: #1565C0;
+}
+
+/* line 248, main.scss */
+.app_admin_dashboard {
+  height: 100%;
+}

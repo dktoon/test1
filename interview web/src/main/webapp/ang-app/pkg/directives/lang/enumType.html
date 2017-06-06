@@ -1,0 +1,20 @@
+<div class="{{clz}}">
+	<span>
+		{{label}}
+	</span>
+	<a>
+		<i class="add icon" 
+			ng-if="types.length < typesCode.length"
+			ng-click="addType(typesCode, types)"></i>
+		<i class="remove red icon" 
+			ng-if="types.length == typesCode.length"
+			ng-click="removeAll(types)"></i>
+	</a>
+	<div class="description">
+		<span class="ui small label" ng-repeat="type in types">
+			{{type}}
+			<i class="delete icon" ng-click="removeType($index, types)"></i>
+		</span>
+	</div>
+
+</div>

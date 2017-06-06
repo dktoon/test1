@@ -1,0 +1,432 @@
+/* line 1, ../../../../../../../view/app/company/template/templateGet/document/documentProperties.scss */
+div[ng-controller="controllers.app.company.template.templateGet.document.DocumentPropertiesController"] {
+  /***************
+   * TYPE DEFAULTS
+   ***************/
+  /************
+   * UTILS
+   ************/
+  /*******************
+   * CODE HIGHLIGHTING
+   *******************/
+  /************
+   * DOCS MENU
+   ************/
+  /* End Docs Menu */
+}
+/* line 3, ../../../../../../../view/app/company/template/templateGet/document/documentProperties.scss */
+div[ng-controller="controllers.app.company.template.templateGet.document.DocumentPropertiesController"] [md-color-picker] .md-color-picker-input-container .md-color-picker-preview, div[ng-controller="controllers.app.company.template.templateGet.document.DocumentPropertiesController"] md-color-picker .md-color-picker-input-container .md-color-picker-preview {
+  top: 0;
+}
+/* line 10, ../../../../../../../view/app/company/template/templateGet/document/documentProperties.scss */
+div[ng-controller="controllers.app.company.template.templateGet.document.DocumentPropertiesController"] a {
+  text-decoration: none;
+  font-weight: 400;
+  -webkit-transition: border-bottom 0.35s;
+  -moz-transition: border-bottom 0.35s;
+  -ms-transition: border-bottom 0.35s;
+  -o-transition: border-bottom 0.35s;
+  transition: border-bottom 0.35s;
+}
+/* line 19, ../../../../../../../view/app/company/template/templateGet/document/documentProperties.scss */
+div[ng-controller="controllers.app.company.template.templateGet.document.DocumentPropertiesController"] h1, div[ng-controller="controllers.app.company.template.templateGet.document.DocumentPropertiesController"] h2, div[ng-controller="controllers.app.company.template.templateGet.document.DocumentPropertiesController"] h3, div[ng-controller="controllers.app.company.template.templateGet.document.DocumentPropertiesController"] h4, div[ng-controller="controllers.app.company.template.templateGet.document.DocumentPropertiesController"] h5, div[ng-controller="controllers.app.company.template.templateGet.document.DocumentPropertiesController"] h6 {
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+/* line 23, ../../../../../../../view/app/company/template/templateGet/document/documentProperties.scss */
+div[ng-controller="controllers.app.company.template.templateGet.document.DocumentPropertiesController"] h1 {
+  font-size: 3.400rem;
+  font-weight: 400;
+  line-height: 4rem;
+}
+/* line 28, ../../../../../../../view/app/company/template/templateGet/document/documentProperties.scss */
+div[ng-controller="controllers.app.company.template.templateGet.document.DocumentPropertiesController"] h2 {
+  font-size: 2.400rem;
+  font-weight: 400;
+  line-height: 3.2rem;
+}
+/* line 33, ../../../../../../../view/app/company/template/templateGet/document/documentProperties.scss */
+div[ng-controller="controllers.app.company.template.templateGet.document.DocumentPropertiesController"] h3 {
+  font-size: 2.000rem;
+  font-weight: 500;
+  letter-spacing: 0.005em;
+}
+/* line 38, ../../../../../../../view/app/company/template/templateGet/document/documentProperties.scss */
+div[ng-controller="controllers.app.company.template.templateGet.document.DocumentPropertiesController"] h4 {
+  font-size: 1.600rem;
+  font-weight: 400;
+  letter-spacing: 0.010em;
+  line-height: 2.4rem;
+}
+/* line 44, ../../../../../../../view/app/company/template/templateGet/document/documentProperties.scss */
+div[ng-controller="controllers.app.company.template.templateGet.document.DocumentPropertiesController"] p {
+  font-size: 1.6rem;
+  font-weight: 400;
+  letter-spacing: 0.010em;
+  line-height: 1.6em;
+  margin: 0.8em 0 1.6em;
+}
+/* line 51, ../../../../../../../view/app/company/template/templateGet/document/documentProperties.scss */
+div[ng-controller="controllers.app.company.template.templateGet.document.DocumentPropertiesController"] strong {
+  font-weight: 500;
+}
+/* line 55, ../../../../../../../view/app/company/template/templateGet/document/documentProperties.scss */
+div[ng-controller="controllers.app.company.template.templateGet.document.DocumentPropertiesController"] .md-api-table td,
+div[ng-controller="controllers.app.company.template.templateGet.document.DocumentPropertiesController"] .md-api-table th {
+  padding: 12px 16px;
+  text-align: left;
+}
+/* line 61, ../../../../../../../view/app/company/template/templateGet/document/documentProperties.scss */
+div[ng-controller="controllers.app.company.template.templateGet.document.DocumentPropertiesController"] .md-api-table td {
+  vertical-align: top;
+}
+/* line 64, ../../../../../../../view/app/company/template/templateGet/document/documentProperties.scss */
+div[ng-controller="controllers.app.company.template.templateGet.document.DocumentPropertiesController"] .md-api-table td.description *:first-child {
+  margin-top: 0;
+}
+/* line 67, ../../../../../../../view/app/company/template/templateGet/document/documentProperties.scss */
+div[ng-controller="controllers.app.company.template.templateGet.document.DocumentPropertiesController"] .md-api-table td.description *:last-child {
+  margin-bottom: 0;
+}
+/* line 70, ../../../../../../../view/app/company/template/templateGet/document/documentProperties.scss */
+div[ng-controller="controllers.app.company.template.templateGet.document.DocumentPropertiesController"] .md-api-table tr:nth-child(odd) td {
+  background-color: #E3ECF5;
+}
+/* line 73, ../../../../../../../view/app/company/template/templateGet/document/documentProperties.scss */
+div[ng-controller="controllers.app.company.template.templateGet.document.DocumentPropertiesController"] .md-api-table tr:nth-child(even) td {
+  background-color: #D1DEEC;
+}
+/* line 76, ../../../../../../../view/app/company/template/templateGet/document/documentProperties.scss */
+div[ng-controller="controllers.app.company.template.templateGet.document.DocumentPropertiesController"] .md-api-table th {
+  background-color: #4C9EF0;
+  color: white;
+}
+/* line 81, ../../../../../../../view/app/company/template/templateGet/document/documentProperties.scss */
+div[ng-controller="controllers.app.company.template.templateGet.document.DocumentPropertiesController"] blockquote {
+  border-left: 3px solid rgba(0, 0, 0, 0.12);
+  font-style: italic;
+  margin-left: 0;
+  padding-left: 16px;
+}
+/* line 87, ../../../../../../../view/app/company/template/templateGet/document/documentProperties.scss */
+div[ng-controller="controllers.app.company.template.templateGet.document.DocumentPropertiesController"] ul {
+  margin: 0;
+  padding: 0;
+}
+/* line 91, ../../../../../../../view/app/company/template/templateGet/document/documentProperties.scss */
+div[ng-controller="controllers.app.company.template.templateGet.document.DocumentPropertiesController"] ul li {
+  margin-left: 16px;
+  padding: 0;
+  margin-top: 3px;
+  list-style-position: inside;
+}
+/* line 97, ../../../../../../../view/app/company/template/templateGet/document/documentProperties.scss */
+div[ng-controller="controllers.app.company.template.templateGet.document.DocumentPropertiesController"] ul li:first-child {
+  margin-top: 0;
+}
+/* line 103, ../../../../../../../view/app/company/template/templateGet/document/documentProperties.scss */
+div[ng-controller="controllers.app.company.template.templateGet.document.DocumentPropertiesController"] ul.skip-links li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+/* line 108, ../../../../../../../view/app/company/template/templateGet/document/documentProperties.scss */
+div[ng-controller="controllers.app.company.template.templateGet.document.DocumentPropertiesController"] ul.skip-links li a {
+  background-color: #fff;
+  display: block;
+  margin: 0.5em 0 0.5em 0.5em;
+  opacity: 0;
+  left: 0;
+  position: absolute;
+  text-decoration: none;
+  top: 0;
+  width: 92%;
+  -webkit-transition: opacity   0.15s linear;
+  -moz-transition: opacity  0.15s linear;
+  transition: opacity   0.15s linear;
+}
+/* line 122, ../../../../../../../view/app/company/template/templateGet/document/documentProperties.scss */
+div[ng-controller="controllers.app.company.template.templateGet.document.DocumentPropertiesController"] ul.skip-links li a:focus {
+  background-color: #fff !important;
+  opacity: 1;
+  z-index: 2;
+}
+/* line 130, ../../../../../../../view/app/company/template/templateGet/document/documentProperties.scss */
+div[ng-controller="controllers.app.company.template.templateGet.document.DocumentPropertiesController"] pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+/* line 136, ../../../../../../../view/app/company/template/templateGet/document/documentProperties.scss */
+div[ng-controller="controllers.app.company.template.templateGet.document.DocumentPropertiesController"] pre > code.highlight {
+  padding: 16px;
+  font-weight: 400;
+  -webkit-user-select: initial;
+  -moz-user-select: initial;
+  -ms-user-select: initial;
+  user-select: initial;
+}
+/* line 145, ../../../../../../../view/app/company/template/templateGet/document/documentProperties.scss */
+div[ng-controller="controllers.app.company.template.templateGet.document.DocumentPropertiesController"] pre, div[ng-controller="controllers.app.company.template.templateGet.document.DocumentPropertiesController"] code {
+  margin: 0;
+  padding: 0;
+  font-family: Menlo, Monaco, "Andale Mono", "lucida console", "Courier New", monospace;
+  overflow-wrap: break-word;
+}
+/* line 153, ../../../../../../../view/app/company/template/templateGet/document/documentProperties.scss */
+div[ng-controller="controllers.app.company.template.templateGet.document.DocumentPropertiesController"] pre > code.highlight {
+  background-color: transparent;
+  font-weight: 400;
+  padding: 16px;
+}
+/* line 159, ../../../../../../../view/app/company/template/templateGet/document/documentProperties.scss */
+div[ng-controller="controllers.app.company.template.templateGet.document.DocumentPropertiesController"] code {
+  font-size: 1.4rem;
+  background: rgba(0, 0, 0, 0.065);
+}
+/* line 164, ../../../../../../../view/app/company/template/templateGet/document/documentProperties.scss */
+div[ng-controller="controllers.app.company.template.templateGet.document.DocumentPropertiesController"] code.highlight {
+  display: block;
+  overflow-wrap: break-word;
+}
+/* line 169, ../../../../../../../view/app/company/template/templateGet/document/documentProperties.scss */
+div[ng-controller="controllers.app.company.template.templateGet.document.DocumentPropertiesController"] code:not(.highlight) {
+  color: #106CC8;
+  margin-left: 1px;
+  margin-right: 1px;
+  -webkit-font-smoothing: auto;
+  padding: 0.125em 0.35em;
+  border-radius: 2px;
+}
+/* line 177, ../../../../../../../view/app/company/template/templateGet/document/documentProperties.scss */
+div[ng-controller="controllers.app.company.template.templateGet.document.DocumentPropertiesController"] .layout-content code.highlight {
+  margin-bottom: 15px;
+}
+/* line 184, ../../../../../../../view/app/company/template/templateGet/document/documentProperties.scss */
+div[ng-controller="controllers.app.company.template.templateGet.document.DocumentPropertiesController"] .site-sidenav {
+  background: #106CC8;
+  overflow: hidden;
+}
+/* line 188, ../../../../../../../view/app/company/template/templateGet/document/documentProperties.scss */
+div[ng-controller="controllers.app.company.template.templateGet.document.DocumentPropertiesController"] .site-sidenav md-content {
+  background: transparent;
+}
+/* line 191, ../../../../../../../view/app/company/template/templateGet/document/documentProperties.scss */
+div[ng-controller="controllers.app.company.template.templateGet.document.DocumentPropertiesController"] .site-sidenav,
+div[ng-controller="controllers.app.company.template.templateGet.document.DocumentPropertiesController"] .site-sidenav.md-locked-open-add-active,
+div[ng-controller="controllers.app.company.template.templateGet.document.DocumentPropertiesController"] .site-sidenav.md-locked-open {
+  width: 272px;
+  min-width: 272px;
+  max-width: 272px;
+}
+/* line 198, ../../../../../../../view/app/company/template/templateGet/document/documentProperties.scss */
+div[ng-controller="controllers.app.company.template.templateGet.document.DocumentPropertiesController"] .site-sidenav > * {
+  min-width: 218px;
+}
+/* line 202, ../../../../../../../view/app/company/template/templateGet/document/documentProperties.scss */
+div[ng-controller="controllers.app.company.template.templateGet.document.DocumentPropertiesController"] .docs-menu,
+div[ng-controller="controllers.app.company.template.templateGet.document.DocumentPropertiesController"] .docs-menu ul {
+  list-style: none;
+  padding: 0;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+/* line 209, ../../../../../../../view/app/company/template/templateGet/document/documentProperties.scss */
+div[ng-controller="controllers.app.company.template.templateGet.document.DocumentPropertiesController"] .docs-menu li {
+  margin: 0;
+}
+/* line 212, ../../../../../../../view/app/company/template/templateGet/document/documentProperties.scss */
+div[ng-controller="controllers.app.company.template.templateGet.document.DocumentPropertiesController"] .docs-menu > li:nth-child(1) {
+  border-top: none;
+}
+/* line 215, ../../../../../../../view/app/company/template/templateGet/document/documentProperties.scss */
+div[ng-controller="controllers.app.company.template.templateGet.document.DocumentPropertiesController"] .md-whiteframe-glow-z1 {
+  box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 0px 2px 2px rgba(0, 0, 0, 0.098), 0px 0px 5px 1px rgba(0, 0, 0, 0.084);
+}
+/* line 220, ../../../../../../../view/app/company/template/templateGet/document/documentProperties.scss */
+div[ng-controller="controllers.app.company.template.templateGet.document.DocumentPropertiesController"] .docs-menu > li {
+  border-bottom: 1px solid #267ED5;
+}
+/* line 224, ../../../../../../../view/app/company/template/templateGet/document/documentProperties.scss */
+div[ng-controller="controllers.app.company.template.templateGet.document.DocumentPropertiesController"] .docs-menu .md-button {
+  border-radius: 0;
+  color: white;
+  cursor: pointer;
+  display: block;
+  align-items: inherit;
+  line-height: 40px;
+  margin: 0;
+  max-height: 40px;
+  overflow: hidden;
+  padding: 0px 16px;
+  text-align: left;
+  text-decoration: none;
+  white-space: normal;
+  width: 100%;
+}
+/* line 241, ../../../../../../../view/app/company/template/templateGet/document/documentProperties.scss */
+div[ng-controller="controllers.app.company.template.templateGet.document.DocumentPropertiesController"] html[dir=rtl] .docs-menu .md-button,
+div[ng-controller="controllers.app.company.template.templateGet.document.DocumentPropertiesController"] body[dir=rtl] .docs-menu .md-button {
+  unicode-bidi: embed;
+  text-align: right;
+}
+/* line 248, ../../../../../../../view/app/company/template/templateGet/document/documentProperties.scss */
+div[ng-controller="controllers.app.company.template.templateGet.document.DocumentPropertiesController"] .docs-menu .md-button:hover,
+div[ng-controller="controllers.app.company.template.templateGet.document.DocumentPropertiesController"] .docs-menu .md-button:focus {
+  background: #267ED5 !important;
+}
+/* line 252, ../../../../../../../view/app/company/template/templateGet/document/documentProperties.scss */
+div[ng-controller="controllers.app.company.template.templateGet.document.DocumentPropertiesController"] .docs-menu .md-button md-icon {
+  color: white;
+}
+/* line 256, ../../../../../../../view/app/company/template/templateGet/document/documentProperties.scss */
+div[ng-controller="controllers.app.company.template.templateGet.document.DocumentPropertiesController"] .docs-menu md-select {
+  /* Override md-select margins.  With margins the menu will look incorrect and causes mobile list
+     to not be scrollable.
+   */
+  margin: 0;
+  width: 100%;
+}
+/* line 265, ../../../../../../../view/app/company/template/templateGet/document/documentProperties.scss */
+div[ng-controller="controllers.app.company.template.templateGet.document.DocumentPropertiesController"] .docs-menu md-select md-select-label {
+  justify-content: flex-end;
+  padding-top: 10px;
+}
+/* line 270, ../../../../../../../view/app/company/template/templateGet/document/documentProperties.scss */
+div[ng-controller="controllers.app.company.template.templateGet.document.DocumentPropertiesController"] .docs-menu md-select md-select-label span {
+  margin-right: auto;
+  padding-left: 13px;
+}
+/* line 275, ../../../../../../../view/app/company/template/templateGet/document/documentProperties.scss */
+div[ng-controller="controllers.app.company.template.templateGet.document.DocumentPropertiesController"] .docs-menu md-select .md-select-icon {
+  margin-right: 28px;
+}
+/* line 279, ../../../../../../../view/app/company/template/templateGet/document/documentProperties.scss */
+div[ng-controller="controllers.app.company.template.templateGet.document.DocumentPropertiesController"] .docs-menu button.md-button::-moz-focus-inner {
+  padding: 0;
+}
+/* line 282, ../../../../../../../view/app/company/template/templateGet/document/documentProperties.scss */
+div[ng-controller="controllers.app.company.template.templateGet.document.DocumentPropertiesController"] .docs-menu .md-button.active {
+  background: #267ED5;
+}
+/* line 285, ../../../../../../../view/app/company/template/templateGet/document/documentProperties.scss */
+div[ng-controller="controllers.app.company.template.templateGet.document.DocumentPropertiesController"] .menu-heading {
+  display: block;
+  line-height: 32px;
+  margin: 0;
+  padding: 8px 16px 0;
+  text-align: left;
+  width: 100%;
+  color: rgba(255, 255, 255, 0.54);
+}
+/* line 296, ../../../../../../../view/app/company/template/templateGet/document/documentProperties.scss */
+div[ng-controller="controllers.app.company.template.templateGet.document.DocumentPropertiesController"] html[dir=rtl] .menu-heading,
+div[ng-controller="controllers.app.company.template.templateGet.document.DocumentPropertiesController"] body[dir=rtl] .menu-heading {
+  unicode-bidi: embed;
+  text-align: right;
+}
+/* line 303, ../../../../../../../view/app/company/template/templateGet/document/documentProperties.scss */
+div[ng-controller="controllers.app.company.template.templateGet.document.DocumentPropertiesController"] .docs-menu li.parentActive,
+div[ng-controller="controllers.app.company.template.templateGet.document.DocumentPropertiesController"] .docs-menu li.parentActive .menu-toggle-list {
+  /*background-color: #2C80D2 !important;*/
+}
+/* line 307, ../../../../../../../view/app/company/template/templateGet/document/documentProperties.scss */
+div[ng-controller="controllers.app.company.template.templateGet.document.DocumentPropertiesController"] .menu-toggle-list {
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+  -webkit-transition: 0.75s cubic-bezier(0.35, 0, 0.25, 1);
+  -webkit-transition-property: height;
+  -moz-transition: 0.75s cubic-bezier(0.35, 0, 0.25, 1);
+  -moz-transition-property: height;
+  transition: 0.75s cubic-bezier(0.35, 0, 0.25, 1);
+  transition-property: height;
+}
+/* line 318, ../../../../../../../view/app/company/template/templateGet/document/documentProperties.scss */
+div[ng-controller="controllers.app.company.template.templateGet.document.DocumentPropertiesController"] .docs-menu .menu-toggle-list a.md-button {
+  display: block;
+  padding: 0 16px 0 32px;
+  text-transform: none;
+  text-rendering: optimizeLegibility;
+  font-weight: 500;
+}
+/* line 326, ../../../../../../../view/app/company/template/templateGet/document/documentProperties.scss */
+div[ng-controller="controllers.app.company.template.templateGet.document.DocumentPropertiesController"] .parent-list-item:last-child {
+  margin-bottom: 20px;
+  /* Prevent the hidden License link from causing a double bottom-border */
+  border-bottom: none;
+}
+/* line 332, ../../../../../../../view/app/company/template/templateGet/document/documentProperties.scss */
+div[ng-controller="controllers.app.company.template.templateGet.document.DocumentPropertiesController"] .md-button-toggle .md-toggle-icon {
+  display: block;
+  margin-left: auto;
+  speak: none;
+  vertical-align: middle;
+  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  transition: transform 0.3s ease-in-out;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+}
+/* line 342, ../../../../../../../view/app/company/template/templateGet/document/documentProperties.scss */
+div[ng-controller="controllers.app.company.template.templateGet.document.DocumentPropertiesController"] .md-button-toggle .md-toggle-icon.toggled {
+  transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+}
+/* line 349, ../../../../../../../view/app/company/template/templateGet/document/documentProperties.scss */
+div[ng-controller="controllers.app.company.template.templateGet.document.DocumentPropertiesController"] .docs-logo {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 0 16px;
+  margin: 0 auto;
+}
+/* line 357, ../../../../../../../view/app/company/template/templateGet/document/documentProperties.scss */
+div[ng-controller="controllers.app.company.template.templateGet.document.DocumentPropertiesController"] .docs-logo:focus {
+  outline: none;
+}
+/* line 360, ../../../../../../../view/app/company/template/templateGet/document/documentProperties.scss */
+div[ng-controller="controllers.app.company.template.templateGet.document.DocumentPropertiesController"] .docs-logo > img {
+  height: 150px;
+  width: auto;
+  display: block;
+  transform-origin: 50% 0;
+  transform: scale(1.2);
+}
+/* line 367, ../../../../../../../view/app/company/template/templateGet/document/documentProperties.scss */
+div[ng-controller="controllers.app.company.template.templateGet.document.DocumentPropertiesController"] .nav-header {
+  background-color: #106CC8;
+  background: linear-gradient(#185694, #106cc8);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #185694), color-stop(1, #106cc8));
+  background: -webkit-linear-gradient(top, #185694 0%, #106cc8 100%);
+  background: -moz-linear-gradient(top, #185694 0%, #106cc8 100%);
+  background: linear-gradient(top, #185694 0%, #106cc8 100%);
+  border-bottom: 1px solid #267ED5;
+  flex-shrink: 0;
+  z-index: 2;
+}
+/* line 377, ../../../../../../../view/app/company/template/templateGet/document/documentProperties.scss */
+div[ng-controller="controllers.app.company.template.templateGet.document.DocumentPropertiesController"] .nav-header h2.dividing-header {
+  font-size: 20px;
+}
+/* line 381, ../../../../../../../view/app/company/template/templateGet/document/documentProperties.scss */
+div[ng-controller="controllers.app.company.template.templateGet.document.DocumentPropertiesController"] a.docs-logo {
+  border-bottom: none;
+}
+/* line 384, ../../../../../../../view/app/company/template/templateGet/document/documentProperties.scss */
+div[ng-controller="controllers.app.company.template.templateGet.document.DocumentPropertiesController"] .docs-logotype {
+  color: white;
+  text-align: center;
+  font-weight: 400;
+  font-size: 26px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+/* line 393, ../../../../../../../view/app/company/template/templateGet/document/documentProperties.scss */
+div[ng-controller="controllers.app.company.template.templateGet.document.DocumentPropertiesController"] .docs-menu-separator-icon {
+  margin: 0;
+}
+/* line 396, ../../../../../../../view/app/company/template/templateGet/document/documentProperties.scss */
+div[ng-controller="controllers.app.company.template.templateGet.document.DocumentPropertiesController"] .docs-menu-separator-icon img {
+  height: 16px;
+}

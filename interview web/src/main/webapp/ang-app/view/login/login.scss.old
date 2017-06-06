@@ -1,0 +1,15 @@
+.pkg_login_index{
+	img {
+		max-width: 215px;
+		max-height: 150px;
+	}
+	
+	input:-webkit-autofill {
+	    -webkit-box-shadow: 0 0 0px 1000px white inset;
+	}
+}
+
+
+.pkg_login_signup{
+	
+}
